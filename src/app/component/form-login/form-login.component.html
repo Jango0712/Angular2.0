@@ -1,0 +1,47 @@
+<!-- <div>
+<form [formGroup]="myForm">
+<div class="container">Iniciar Sesion
+
+    <ul >
+        <li><input class="input" type="text" placeholder="Email" formControlName ='email'  [ngClass]="{'is-invalid': (myForm.get('email').dirty || myForm.get('email').touched) && !myForm.get('email').valid}"></li>
+        <div *ngIf="!myForm.get('email').valid" class="invalid">
+            <div *ngIf="myForm.get('email').errors.required"> Por favor inserte su email</div>
+            <div *ngIf="myForm.get('email').errors.email"> El email es incorrecto</div>
+        </div>
+    <li><input class="input" type="password" placeholder="Password" formControlName ='password' [ngClass]="{'is-invalid': (myForm.get('password').dirty || myForm.get('password').touched) && !myForm.get('password').valid}"></li>
+    <div *ngIf="!myForm.get('password').valid" class="invalid">
+        <div *ngIf="!myForm.get('password').errors.required"> Por favor inserte su contraseña</div>
+        <div *ngIf="!myForm.get('password').errors.minlength"> La contraseña debe tener al menos 8 caracteres</div>
+    </div></ul>
+    
+    <div><button class="buttom" [disabled]="myForm.invalid" (click)="iniciar()"><span>iniciar</span></button></div>
+</div>
+</form>
+</div>     -->
+
+<form [formGroup]="myForm">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName ='email'  [ngClass]="{'is-invalid': (myForm.get('email').dirty || myForm.get('email').touched) && !myForm.get('email').valid}">
+      <div *ngIf="!myForm.get('email').valid" class="invalid">
+        <div *ngIf="myForm.get('email').errors.required && myForm.get('email').touched"> Por favor inserte su email</div>
+        <div *ngIf="myForm.get('email').errors.email "> El email es incorrecto</div>
+    </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName ='password' [ngClass]="{'is-invalid': (myForm.get('password').dirty || myForm.get('password').touched) && !myForm.get('password').valid}">
+      <div *ngIf="!myForm.get('password').valid" class="invalid">
+        <div *ngIf="myForm.get('password').errors.required && myForm.get('password').touched"> Por favor inserte su contraseña</div>
+        <div *ngIf="myForm.get('password').errors.minlength"> La contraseña debe tener al menos 8 caracteres</div>
+    </div>
+    </div>
+   
+    <button type="button" class="btn btn-primary" [disabled]="myForm.invalid" (click)="iniciar()">Login</button>
+  </form>
+
+
+
+
+
+

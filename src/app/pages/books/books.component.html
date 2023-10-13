@@ -1,0 +1,18 @@
+<main class="fondo">
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="number" placeholder="Search" aria-label="Search" #buscarLibro>
+    <button class="btn btn-outline-success" type="button" (click)="buscar(buscarLibro.valueAsNumber)">Search</button>
+  </form>
+  <div class="ancho">
+    <div class="cartas">
+        <div *ngIf="books.length != 0" class="mensaje"><p>Libros</p></div>
+        <div *ngIf="books.length === 0" class="mensaje2"><p>No hay libros...</p></div>
+      <div *ngIf="books.length != 0" class="cards"> 
+       <ng-container *ngFor="let bookC of books; let i = index">
+       <app-card [book]="bookC" [i]="i" (eliminar)="delete($event)"></app-card>
+    </ng-container>
+    </div>
+    </div>
+  </div>
+
+</main>

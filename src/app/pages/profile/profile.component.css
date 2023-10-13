@@ -1,0 +1,126 @@
+*{font-family: 'Lobster', cursive;}
+
+.fondo{
+    background-image: url(src/assets/img/libros.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 86vb;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ .container{
+    display: flex;
+    width: 900px;
+    height: 700px;
+    border-radius: 5px;
+    border: solid 5px #790e0e;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+   color: white;
+   background-color: #0000008d;
+   padding: 10px;
+   backdrop-filter: blur(3px);
+   box-shadow: 1px 1px 20px 0px #fffdfd;
+ }
+ 
+ .card{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    color: white;
+    padding: 10px;
+ }
+
+ .img{
+    height: 40%;
+    width: 60%;
+    justify-content: center;
+    
+ }
+
+ .img-img{
+height: 100%;
+width: 100%;
+border-radius: 50%;
+ }
+ 
+ .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .titulo{
+    font-size: 40px;
+ }
+
+ .datos{
+    border: solid white 1px;
+    width: 400px;
+    height: 15%;
+    border-radius: 10px;
+ }
+
+ .form{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .title{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+ }
+ 
+ .input{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 80%;
+    
+   
+ }
+
+ 
+ .button{
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #750000,
+        rgb(255, 251, 251),
+        #09f
+    );
+    border-radius: 8px;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    margin-top: 50px;
+ }
+
+ button span{
+background-color: #767676;
+padding: 16px 24px;
+border-radius: 6px;
+transition: .3s;
+ } 
+
+ button:hover span{
+    background: none;
+
+ }
+
+ button:active{
+    transform: scale(0.9);
+ }

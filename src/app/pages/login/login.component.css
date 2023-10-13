@@ -1,0 +1,13 @@
+.fondo{
+    background-image: url(src/assets/img/libro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 86vb;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }

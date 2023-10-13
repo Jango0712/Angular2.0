@@ -1,0 +1,25 @@
+<main class="fondo">
+<div class="container">
+    <div class="card">
+        <div class="img"><img class="img-img" src="{{user.photo}}" alt=""></div>
+        <div class="body">
+            <p class="titulo">{{ user.nombre }} {{ user.apellidos }}</p>
+            <p class="datos">{{ user.nombre }}</p>
+            <p class="datos">{{ user.apellidos }}</p>
+            <p class="datos">{{ user.correo }}</p>
+        </div>
+    </div>
+    <div class="form">
+        <h1 class="title">Editar datos</h1>
+      
+        <input class="input" type="text" placeholder="Nombre" #nombre>
+        <input class="input" type="text" placeholder="Apellidos" #apellidos>
+        <input class="input" type="text" placeholder="Correo" #correo>
+        <input class="input" type="text" placeholder="URL" #url>
+      
+      <button (click)="update(nombre,apellidos,correo,url)" class="button"><span>Modificar</span></button>
+    </div>
+</div>
+
+</main>
+    

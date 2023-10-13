@@ -1,0 +1,15 @@
+<main class="fondo">
+    <div class="rellenar">
+        <h2 class="title">Modificar libro</h2>
+      
+        <input class="input" type="text" placeholder="Title" #title>
+        <input class="input" type="text" placeholder="Type" #type>
+        <input class="input" type="text" placeholder="Author" #author>
+        <input class="input" type="number" placeholder="price" #price>
+        <input class="input" type="text" placeholder="Photo" #photo>
+        <input class="input" type="number" placeholder="Id_book" #id_book>
+        <input class="input" type="number" placeholder="Id_user" #id_user>
+        
+      <button  class="buttom2" type="button" (click)= "modificar(title.value, type.value, author.value, price.valueAsNumber, photo.value, id_book.valueAsNumber, id_user.valueAsNumber)"><span>Modificar</span></button>
+    </div>
+</main>

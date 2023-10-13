@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    background: rgb(72, 72, 72);
+    height: 7vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    padding: 25px;
+    font-size: 30px;
+}
+
+.routing{
+    text-decoration: none;
+    color: rgb(144, 142, 142);
+}
+
+a:hover{
+    color: white;
+    transition: 1s;
+}

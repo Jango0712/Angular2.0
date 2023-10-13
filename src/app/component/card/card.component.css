@@ -1,0 +1,158 @@
+.card{
+    height: 650px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    color: white;
+    box-shadow: 1px 1px 20px 0px #fffdfd;
+    border-radius: 10px;
+    margin: 10px 40px;
+    border: 0;
+ }
+
+.divb{
+position: absolute;
+height: 20px;
+width: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+top: 5px;
+right: 5px;
+}
+
+ .button{
+ display: flex;
+background-color: #990000a1;
+z-index: 0;
+height: 20px;
+width: 20px;
+backdrop-filter: blur(3px);
+font-size:small;
+padding-left: 7px;
+padding-bottom: 20px;
+border-radius: 50%;
+border: none;
+position: relative;
+
+}
+
+
+
+ .img{
+    height: 38%;
+    width: 100%;
+    justify-content: center;
+    
+ }
+
+ .img-img{
+height: 100%;
+width: 100%;
+border-radius: 10px;
+ }
+ 
+ .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+ }
+
+ .titulo{
+    font-size: 40px;
+    
+ }
+
+ .datos{
+    border: solid white 1px;
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+ }
+
+ .buttom{
+    border: 0;
+    background-image: linear-gradient(
+      150deg,
+      #9500ff,
+      #09f,
+      #00ddff
+    );
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      font-size: 18px;
+      padding: 4px;
+      cursor: pointer;
+      transition: .3s;
+  }
+  
+  button span{
+      background-color: #111;
+      padding: 16px 24px;
+      border-radius: 6px;
+      transition: .3s;
+  
+  }
+  
+  button:hover span{
+      background: none;
+  
+  }
+  
+  button:active{
+      transform: scale(0.9);
+  }
+
+.rellenar{
+    width: 500px;
+    height: 900px;
+    display: flex;
+    border-radius: 5px;
+    border: solid 5px #0e5579;
+   background-color: #0000008d;
+   padding: 10px;
+   backdrop-filter: blur(3px);
+   box-shadow: 1px 1px 20px 0px #fffdfd;
+   flex-direction: column;
+   align-items: center;
+   color: white;
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+ }
+ 
+ .input{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: 7%;
+    font-size: 30px;
+   
+ }
+
+ .buttom2{
+    border: 0;
+    background-image: linear-gradient(
+      150deg,
+      #780000,
+      rgb(162, 218, 255),
+      #004aa4
+    );
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      font-size: 18px;
+      padding: 4px;
+      cursor: pointer;
+      transition: .3s;
+      margin: 20px;
+      position: relative;
+  }

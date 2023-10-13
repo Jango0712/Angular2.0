@@ -1,0 +1,66 @@
+<!-- <form [formGroup]="registro">
+<div class="container">Formulario de registro
+
+    <ul>
+    <li><input class="input" type="text" placeholder="Name" formControlName ='nombre'  [ngClass]="{'is-invalid': (registro.get('nombre').dirty || registro.get('nombre').touched) && !registro.get('nombre').valid}"></li>
+    <div *ngIf="!registro.get('nombre').valid" class="invalid">
+        <div *ngIf="!registro.get('nombre').errors.required"> Por favor inserte su nombre</div>
+    </div>
+    <li><input class="input" type="text" placeholder="Last Name" formControlName ='apellido'  [ngClass]="{'is-invalid': (registro.get('apellido').dirty || registro.get('apellido').touched) && !registro.get('apellido').valid}"></li>
+    <div *ngIf="!registro.get('apellido').valid" class="invalid">
+        <div *ngIf="!registro.get('apellido').errors.required"> Por favor inserte sus apellidos</div>
+    </div>
+    <li><input class="input" type="password" placeholder="Password" formControlName ='password' [ngClass]="{'is-invalid': (registro.get('password').dirty || registro.get('password').touched) && !registro.get('password').valid}"></li>
+    <div *ngIf="!registro.get('password').valid" class="invalid">
+        <div *ngIf="!registro.get('password').errors.required"> Por favor inserte su contraseña</div>
+        <div *ngIf="!registro.get('password').errors.minlength"> La contraseña debe tener al menos 8 caracteres</div>
+    </div>
+    <li><input class="input" type="password" placeholder="Repeat Password" formControlName ='checkPasswords' [ngClass]="{'is-invalid': (registro.get('checkPasswords').dirty || registro.get('checkPasswords').touched) && !registro.get('checkPasswords').valid}"></li>
+    <div *ngIf="!registro.get('password').valid" class="invalid">
+        <div *ngIf="!registro.get('password').errors.required"> Por favor repita su contraseña</div>
+        <div *ngIf="!registro.get('password').errors.checkPasswords"> Las contraseñas deben ser iguales</div>
+    </div>
+    <li><input class="input" type="text" placeholder="Email" formControlName ='email'  [ngClass]="{'is-invalid': (registro.get('email').dirty || registro.get('email').touched) && !registro.get('email').valid}"></li></ul>
+    <div *ngIf="!registro.get('email').valid" class="invalid">
+        <div *ngIf="!registro.get('email').errors.required"> Por favor inserte su email</div>
+        <div *ngIf="!registro.get('email').errors.email"> El email es incorrecto</div>
+    </div>
+    <div><button class="buttom"  [disabled]="registro.invalid" (click)="registrar()"><span>Registrarme</span></button></div>
+</div>
+</form> -->
+
+<form [formGroup]="registro">
+    <div class="mb-3">
+      <label  class="form-label">Nombre Completo</label>
+      <input type="text" class="form-control"   formControlName ='nombre'  [ngClass]="{'is-invalid': (registro.get('nombre').dirty || registro.get('nombre').touched) && !registro.get('nombre').valid}">
+      <div *ngIf="!registro.get('nombre').valid" class="invalid">
+        <div *ngIf="registro.get('nombre').errors.required && registro.get('nombre').touched"> Por favor inserte su nombre completo</div>
+    </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" formControlName ='password2' [ngClass]="{'is-invalid': (registro.get('password2').dirty || registro.get('password2').touched) && !registro.get('password2').valid}">
+        <div *ngIf="!registro.get('password2').valid" class="invalid">
+            <div *ngIf="registro.get('password2').errors.required && registro.get('password2').touched"> Por favor inserte su contraseña</div>
+            <div *ngIf="registro.get('password2').errors.minlength"> La contraseña debe tener al menos 8 caracteres</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" formControlName ='checkPassword' [ngClass]="{'is-invalid': (registro.get('checkPassword').dirty || registro.get('checkPassword').touched) && !registro.get('checkPassword').valid}">
+        <div *ngIf="!registro.get('checkPassword').valid" class="invalid">
+            <div *ngIf="registro.get('checkPassword').errors.required && registro.get('checkPassword').touched"> Por favor repita su contraseña</div>
+            <div *ngIf="!registro.get('checkPassword').errors.required && registro.get('checkPassword').errors.matchPassword "> Las contraseñas deben ser iguales</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName ='email2'  [ngClass]="{'is-invalid': (registro.get('email2').dirty || registro.get('email2').touched) && !registro.get('email2').valid}">
+        <div *ngIf="!registro.get('email2').valid" class="invalid">
+          <div *ngIf="registro.get('email2').errors.required && registro.get('email2').touched"> Por favor inserte su email</div>
+          <div *ngIf="registro.get('email2').errors.email "> El email es incorrecto</div>
+      </div>
+      </div>
+   
+    <button type="button" class="btn btn-primary" [disabled]="registro.invalid" (click)="registrar()">registrarse</button>
+  </form>

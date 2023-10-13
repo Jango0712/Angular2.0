@@ -1,0 +1,84 @@
+*{font-family: 'Lobster', cursive;}
+
+.fondo{
+    background-image: url(src/assets/img/libros.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 86vh;
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+ }
+
+ .rellenar{
+    width: 18vw;
+    height: 60vh;
+    display: flex;
+    border-radius: 5px;
+    border: solid 5px #0e5579;
+   background-color: #0000008d;
+   padding: 10px;
+   backdrop-filter: blur(3px);
+   box-shadow: 1px 1px 20px 0px #fffdfd;
+   flex-direction: column;
+   align-items: center;
+   color: white;
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+ }
+ 
+ .input{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: 7%;
+    font-size: 30px;
+   
+ }
+
+ .buttom2{
+    border: 0;
+    background-image: linear-gradient(
+      150deg,
+      #780000,
+      rgb(162, 218, 255),
+      #004aa4
+    );
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      font-size: 18px;
+      padding: 4px;
+      cursor: pointer;
+      transition: .3s;
+      margin: 20px;
+     
+  }
+
+
+  button span{
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+
+}
+
+button:hover span{
+    background: none;
+
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+

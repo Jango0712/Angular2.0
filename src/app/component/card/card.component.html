@@ -1,0 +1,18 @@
+
+<div  class="card">
+    <div class="divb">
+    <button class="button" type="button" (click)="lanzarEvento()">x</button>
+</div>
+    <div class="img">
+        
+        <img class="img-img" src="{{book.photo}}" alt=""></div>
+    <div class="body">
+        <p class="titulo">{{book.title}}</p>
+        <p class="datos">{{ book.type }}</p>
+        <p class="datos">{{ book.author }}</p>
+        <p class="datos">{{ book.id_user }}</p>
+        <p class="datos">{{ book.id_book | ref}}</p>
+        <p class="datos">{{ book.price }} €</p>
+    </div>
+    <button [ngClass]="i %2==0 ? 'buttom':'buttom2'" type="button"><span>Comprar</span></button>
+</div>

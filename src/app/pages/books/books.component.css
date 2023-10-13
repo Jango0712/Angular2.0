@@ -1,0 +1,83 @@
+*{font-family: 'Lobster', cursive;}
+
+.fondo{
+    background-image: url(src/assets/img/libros.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 86vh;
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+
+.cartas{
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: solid 5px #790e0e;
+    background-color: #0000008d;
+    padding: 10px;
+    backdrop-filter: blur(3px);
+    box-shadow: 1px 1px 20px 0px #fffdfd;
+    overflow: auto;
+    color: white;
+    justify-content: center;
+    margin-left: 300px;
+
+ 
+}
+
+.cards{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mensaje{
+  margin: 0px;
+  height: 5%;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  text-decoration:underline;
+  margin: auto;
+}
+
+.mensaje2{
+    height: 5%;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    text-decoration:underline;
+  }
+
+  .input{
+    border-radius: 10px;
+    width: 90%;
+    height: 7%;
+    font-size: 30px;
+   
+ }
+
+ .buscador{
+width: 50%;
+margin: 10px;
+border: solid red 1px;
+ }
+
+ .buscar{
+  border-radius: 5px;
+  height: 45px;
+ }
+
+.ancho{
+  width: 90vw;
+  justify-content: center;
+}
